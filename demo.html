@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZeroForm Demo</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #8fe3ff;
+      margin-bottom: 0.5em;
+    }
+    #output {
+      margin-top: 2em;
+      background: #222;
+      padding: 1em 2em;
+      border-radius: 10px;
+      font-size: 1.2em;
+      max-width: 600px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>ZeroForm Core Demo</h1>
+  <div id="output">Загрузка...</div>
+
+  <script type="module">
+    import {{ dualObserve }} from './library/index.js';
+
+    const output = document.getElementById("output");
+    const inputThought = "Я думаю о пустоте";
+    const result = dualObserve(inputThought);
+    output.textContent = `🧠 Ответ на "${inputThought}": ${result}`;
+  </script>
+</body>
+</html>
