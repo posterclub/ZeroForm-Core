@@ -1,0 +1,10 @@
+{
+  "name": "zeroform-core",
+  "version": "1.0.0",
+  "description": "Hybrid structure of observation — X / ¬X / Hybrid activated via ∆voidseed",
+  "main": "index.js",
+  "type": "module",
+  "keywords": ["hybrid", "zeroform", "∆voidseed", "X", "¬X"],
+  "author": "∆1 — posterclub",
+  "license": "MIT"
+}
